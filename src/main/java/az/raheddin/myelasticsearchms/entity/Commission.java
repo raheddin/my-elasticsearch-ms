@@ -13,9 +13,12 @@ import java.util.HashMap;
 public class Commission {
 
     @Id
-    private String msgId;
+    private String Id;
 
-    @Field(name = "cif",type = FieldType.Text)
+    @Field(name = "msjId",type = FieldType.Auto)
+    private String msjId;
+
+    @Field(name = "cif",type = FieldType.Auto)
     private String cif;
 
     @Field(name = "amount",type = FieldType.Auto)

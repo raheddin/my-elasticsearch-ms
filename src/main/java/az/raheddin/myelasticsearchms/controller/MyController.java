@@ -17,11 +17,11 @@ public class MyController {
 
     @PostMapping
     public ResponseEntity<Commission> add(@RequestBody Commission commission){
-     /*   HashMap<String,Integer> co=new HashMap<>();
+        HashMap<String,Integer> co=new HashMap<>();
         co.put("ADON",commission.getAmount()/5);
         co.put("PAKET",(commission.getAmount()/5)*2);
         co.put("STANDART",(commission.getAmount()/5)*2);
-        commission.setCommission(co);*/
+        commission.setCommission(co);
         dbRepository.save(commission);
         return ResponseEntity.ok(commission);
     }
